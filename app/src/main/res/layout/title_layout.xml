@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorTitle"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/text_title"
+        style="@style/Title_bar"
+        android:text="首页"
+        />
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:id="@+id/register"
+        android:layout_alignBaseline="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:text="注册" />
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/button_backward"
+        style="@style/Backward_button" />
+
+</RelativeLayout>
